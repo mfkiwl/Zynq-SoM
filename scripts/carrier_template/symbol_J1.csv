@@ -39,7 +39,7 @@ Pin,Name,Side
 37,+3V3_SC,left
 38,VBUS_OUT_EN,right
 39,GND,left
-40,ZYNQ_PS_MIO7\VM0,right
+40,ZYNQ_PS_MIO7{slash}VM0,right
 41,STM32_GPIO4,left
 42,ZYNQ_PS_MIO10,right
 43,STM32_GPIO3,left

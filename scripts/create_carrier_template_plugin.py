@@ -10,7 +10,7 @@ footprints = board.GetFootprints()
 tracks = board.GetTracks()
 vector = footprints[1].GetFPRelativePosition()
 
-libpath = os.path.expandvars("${KIPRJMOD}/lib/fp.pretty")
+libpath = os.path.expandvars(os.path.join("${KIPRJMOD}","lib","fp.pretty"))
 # Load the suitable plugin to read/write the .pretty library
 src_type = PCB_IO_MGR.GuessPluginTypeFromLibPath( libpath )
 # We can force the plugin type by using IO_MGR.PluginFind( IO_MGR.KICAD )
@@ -19,7 +19,12 @@ plugin = PCB_IO_MGR.PluginFind( src_type )
 print(f"Selected plugin type: {PCB_IO_MGR.ShowType(src_type)}")
 
 # newBoard = LoadBoard(os.path.expandvars("${KIPRJMOD}/scripts/newboard.kicad_pcb"))
-newBoard = NewBoard(os.path.expandvars("${KIPRJMOD}/scripts/carrier_template/carrier_template.kicad_pcb"))
+newboard_path = os.path.expandvars(os.path.join("${KIPRJMOD}","scripts","carrier_template","carrier_template.kicad_pcb"))
+
+if (os.path.isfile(newboard_path)):
+    os.remove(newboard_path)
+    
+newBoard = NewBoard(newboard_path)
 
 poss = []
 angles = []
@@ -41,7 +46,7 @@ for footprint in footprints:
         newBoard.Add(fp)
 
     if ( (fp_ref == "J1")|(fp_ref == "J2")|(fp_ref == "J3")):
-        name = os.path.expandvars('${KIPRJMOD}/scripts/carrier_template/symbol_' + fp_ref + '.csv')
+        name = os.path.expandvars(os.path.join("${KIPRJMOD}","scripts","carrier_template",'symbol_' + fp_ref + '.csv'))
         with open(name, 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["Zynq_SoM_"+fp_ref])
@@ -76,29 +81,21 @@ for footprint in footprints:
             if netClassName != "PWR" and netClassName != "GND" and netClassName != "+3V3" and  netClassName != "+1V8":
                 for idx, codino in enumerate(Zynq_NetCodes):
                     if codino == netCode:
-                        #print(Zynq_pads[idx].GetPadToDieLength()/1000000)
                         totalLength += Zynq_pads[idx].GetPadToDieLength()
                         break
 
                 trackkini = board.TracksInNet(netCode)
                 for track in trackkini:
                     totalLength += track.GetLength()
-                # if ind % 2 == 0:
-                    # fp.FindPadByNumber(ind+2).SetPadToDieLength(int(totalLength)),
-                # else:
                 fp.FindPadByNumber(ind+1).SetPadToDieLength(int(totalLength)),
         newBoard.Add(fp)
 
 for drawing in board.GetDrawings():
     if drawing.GetLayer() == Edge_Cuts:
-        # copy = PCB_TRACK(aParent = drawing.GetParent())
-        # copy.SetLayer(41)
         newBoard.Add(drawing)
 
-#ciccio = VECTOR2I(150000000,150000000)
 
-
-newBoard.Save(os.path.expandvars("${KIPRJMOD}/scripts/carrier_template/carrier_template.kicad_pcb"))
+newBoard.Save(os.path.expandvars(os.path.join("${KIPRJMOD}","scripts","carrier_template","carrier_template.kicad_pcb")))
 
 
 

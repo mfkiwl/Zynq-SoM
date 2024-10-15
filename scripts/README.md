@@ -28,7 +28,7 @@ Where:
 ### Usage
 Run in terminal 
 ```bash
-python footprint_add_die_lengths.py xc7z020clg484_delay.csv
+python footprint_add_die_lengths.py xc7z020clg484_delays.csv
 ```
 The resulting footprint is saved as `<footprint_name>_with_die_lengths.kicad_mod`
 
