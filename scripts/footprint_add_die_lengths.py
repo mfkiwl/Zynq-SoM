@@ -2,6 +2,7 @@ import sys
 import re
 import pandas as pd
 import numpy as np
+import os
 
 # signal propagation delay in ps/mm (typical value 6 ps/mm)
 TPD = 6
@@ -17,7 +18,7 @@ TPD = 6
 xilinx_file = pd.read_csv(sys.argv[1],index_col = 1)
 # xilinx_file = pd.read_csv("xc7z020clg484_delays.csv",index_col = 1)
 pattern = re.compile(r"\t\(pad\s\"(.*?)\"")
-with open( "CLG484_XIL-L.kicad_mod","r+") as readfile, open("CLG484_XIL-L_with_die_lengths.kicad_mod","w+") as writefile:
+with open( sys.argv[2],"r+") as readfile, open( os.path.splitext(sys.argv[2])[0] + "_with_die_lengths.kicad_mod","w+") as writefile:
     for line in readfile:
         writefile.write(line)
         match = pattern.search(line)
@@ -27,7 +28,6 @@ with open( "CLG484_XIL-L.kicad_mod","r+") as readfile, open("CLG484_XIL-L_with_d
             max_delay = xilinx_file.loc["{}".format(match.group(1).upper())]["Max Trace Delay (ps)"] 
             if  (not np.isnan(min_delay)) and (not np.isnan(max_delay)):
                 avg_delay_mm = float('{:.4f}'.format((min_delay + (max_delay - min_delay)/2)/TPD))
-                print(avg_delay_mm)
                 writefile.write("\t\t(die_length {:.4f})\n".format(avg_delay_mm))
             # if (min_delay & max_delay )
             # writefile.write("\t\t(die length 20.0)\n")
