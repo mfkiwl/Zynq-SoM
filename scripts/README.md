@@ -28,7 +28,7 @@ Where:
 ### Usage
 Run in terminal 
 ```bash
-python footprint_add_die_lengths.py xc7z020clg484_delays.csv
+python footprint_add_die_lengths.py xc7z020clg484_delays.csv CLG484_XIL.kicad_mod
 ```
 The resulting footprint is saved as `<footprint_name>_with_die_lengths.kicad_mod`
 
@@ -42,7 +42,7 @@ This script calculates propagation delays/skews for the following signal groups:
 - ETH RMGII RX
 - USB ULPI
 
-Delays are calculated as $$ \frac{DL}{V_{p*}}+\sum_{layers} \frac{TL_{\,layer}}{V_{p,layer}}$$
+Delays are calculated as $$ \frac{DL}{V_{p*}} + \sum_{layers} \frac{TL_{\,layer}}{V_{p,layer}}$$
 
 Where:
 - $DL$ = Package Die-Length [*mm*] (stored in footprint)
