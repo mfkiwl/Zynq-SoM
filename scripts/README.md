@@ -42,7 +42,8 @@ This script calculates propagation delays/skews for the following signal groups:
 - ETH RMGII RX
 - USB ULPI
 
-Delays are calculated as $$ \frac{DL}{V_{p*}} + \sum_{layers} \frac{TL_{\,layer}}{V_{p,layer}}$$
+Delays are calculated as 
+$$ \frac{DL}{V_{p*}} + \sum_{layers} \frac{TL_{\,layer}}{V_{p,layer}}$$
 
 Where:
 - $DL$ = Package Die-Length [*mm*] (stored in footprint)
