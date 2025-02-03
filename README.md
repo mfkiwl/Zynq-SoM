@@ -8,13 +8,16 @@ This repository contains the hardware design files for a System on Module based 
 ![](pictures/renderino_close_to_final.png)
 ## Description
 
+> [!Warning] 
+> The first prototype is under testing. The design has not been fully verified.
+
 ##  Features
 
 Memory
 
 - 512Mb DDR3L RAM
 - 8Gb eMMC
-- 32Mb Boot Flash
+- 16Mb Boot Flash
 
 Connectivity
 
@@ -41,6 +44,23 @@ The repository is structured as follows:
 - `manufacturing/assembly` containts the BOM and pick-and-place position files
 - `manufacturing/fabrication` containts the Gerber files and fabrication pdf 
 - `lib` contains footprints and 3d models
+
+## Production
+
+
+JLCPCB ordering information:
+
+- Layers: 8
+- PCB Thickness: 1.2 mm
+- Material Type: FR-4 TG155
+- Stackup:  JLC08121H-1080A
+- Outer Copper Weigth:  1 oz
+- Inner Copper Weigth: 0.5 oz
+- Minimum via diameter/hole-size: 0.3/0.2 mm
+- Via Covering: Epoxy Filled and Capped
+- Surface finish: ENIG
+
+
 
 
 
