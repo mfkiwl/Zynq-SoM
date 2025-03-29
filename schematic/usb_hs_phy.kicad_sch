@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "01b8d1e1-8269-4549-bb49-0643081c97e2")
 	(paper "A4")
 	(title_block
@@ -11,9 +11,13 @@
 	)
 	(lib_symbols
 		(symbol "C_Small_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -101,10 +105,10 @@
 			(symbol "C_Small_1_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -113,10 +117,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -162,11 +166,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L_Ferrite_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -235,8 +244,32 @@
 			)
 			(symbol "L_Ferrite_Small_0_1"
 				(arc
-					(start 0 -2.032)
-					(mid 0.5058 -1.524)
+					(start 0 2.032)
+					(mid 0.5058 1.524)
+					(end 0 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.016)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
 					(end 0 -1.016)
 					(stroke
 						(width 0)
@@ -248,8 +281,8 @@
 				)
 				(arc
 					(start 0 -1.016)
-					(mid 0.5058 -0.508)
-					(end 0 0)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
 					(stroke
 						(width 0)
 						(type default)
@@ -260,67 +293,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.905) (xy 0.762 -1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.397) (xy 0.762 -1.143)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.889) (xy 0.762 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.381) (xy 0.762 -0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.127) (xy 0.762 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.635) (xy 0.762 0.889)
+						(xy 0.762 1.651) (xy 0.762 1.905)
 					)
 					(stroke
 						(width 0)
@@ -344,7 +317,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 1.651) (xy 0.762 1.905)
+						(xy 0.762 0.635) (xy 0.762 0.889)
 					)
 					(stroke
 						(width 0)
@@ -356,7 +329,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 -1.651) (xy 1.016 -1.905)
+						(xy 0.762 0.127) (xy 0.762 0.381)
 					)
 					(stroke
 						(width 0)
@@ -368,7 +341,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 -1.143) (xy 1.016 -1.397)
+						(xy 0.762 -0.381) (xy 0.762 -0.127)
 					)
 					(stroke
 						(width 0)
@@ -380,7 +353,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 -0.635) (xy 1.016 -0.889)
+						(xy 0.762 -0.889) (xy 0.762 -0.635)
 					)
 					(stroke
 						(width 0)
@@ -392,7 +365,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 -0.127) (xy 1.016 -0.381)
+						(xy 0.762 -1.397) (xy 0.762 -1.143)
 					)
 					(stroke
 						(width 0)
@@ -404,7 +377,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0.381) (xy 1.016 0.127)
+						(xy 0.762 -1.905) (xy 0.762 -1.651)
 					)
 					(stroke
 						(width 0)
@@ -416,7 +389,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0.889) (xy 1.016 0.635)
+						(xy 1.016 1.905) (xy 1.016 1.651)
 					)
 					(stroke
 						(width 0)
@@ -440,7 +413,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 1.905) (xy 1.016 1.651)
+						(xy 1.016 0.889) (xy 1.016 0.635)
 					)
 					(stroke
 						(width 0)
@@ -450,10 +423,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 0.508)
-					(end 0 1.016)
+				(polyline
+					(pts
+						(xy 1.016 0.381) (xy 1.016 0.127)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -462,10 +435,46 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 1.524)
-					(end 0 2.032)
+				(polyline
+					(pts
+						(xy 1.016 -0.127) (xy 1.016 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -0.635) (xy 1.016 -0.889)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.143) (xy 1.016 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.651) (xy 1.016 -1.905)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -513,11 +522,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -635,6 +649,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MyLibrary:USB3318"
 			(exclude_from_sim no)
@@ -715,107 +730,17 @@
 				)
 			)
 			(symbol "USB3318_1_1"
-				(pin input line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "ID"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
-					(at -15.24 6.35 0)
+					(at -15.24 19.05 0)
 					(length 2.54)
-					(name "DATA5"
+					(name "DATA0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 8.89 0)
-					(length 2.54)
-					(name "DATA4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -15.24 -8.89 0)
-					(length 2.54)
-					(name "CLKOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 11.43 0)
-					(length 2.54)
-					(name "DATA3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 13.97 0)
-					(length 2.54)
-					(name "DATA2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -842,16 +767,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at -15.24 19.05 0)
+					(at -15.24 13.97 0)
 					(length 2.54)
-					(name "DATA0"
+					(name "DATA2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "16"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -859,17 +784,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 7.62 26.67 270)
+				(pin bidirectional line
+					(at -15.24 11.43 0)
 					(length 2.54)
-					(name "VDDIO"
+					(name "DATA3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "17"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -877,17 +802,71 @@
 						)
 					)
 				)
-				(pin output line
-					(at -15.24 -6.35 0)
+				(pin bidirectional line
+					(at -15.24 8.89 0)
 					(length 2.54)
-					(name "NXT"
+					(name "DATA4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "18"
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 6.35 0)
+					(length 2.54)
+					(name "DATA5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 3.81 0)
+					(length 2.54)
+					(name "DATA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 1.27 0)
+					(length 2.54)
+					(name "DATA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -914,24 +893,6 @@
 					)
 				)
 				(pin input line
-					(at 15.24 7.62 180)
-					(length 2.54)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -15.24 -3.81 0)
 					(length 2.54)
 					(name "STP"
@@ -949,17 +910,17 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 2.54 26.67 270)
+				(pin output line
+					(at -15.24 -6.35 0)
 					(length 2.54)
-					(name "VDD18"
+					(name "NXT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "21"
+					(number "18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -967,17 +928,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -15.24 -17.78 0)
+				(pin output line
+					(at -15.24 -8.89 0)
 					(length 2.54)
-					(name "~{RESETB}"
+					(name "CLKOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "22"
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1003,35 +964,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 15.24 -13.97 180)
+				(pin input line
+					(at -15.24 -17.78 0)
 					(length 2.54)
-					(name "RBIAS"
+					(name "~{RESETB}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -24.13 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1075,17 +1018,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 2.54 180)
+				(pin power_in line
+					(at 0 -24.13 90)
 					(length 2.54)
-					(name "DM"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "25"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1093,17 +1036,35 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 5.08 180)
+				(pin power_out line
+					(at 2.54 26.67 270)
 					(length 2.54)
-					(name "DP"
+					(name "VDD18"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 26.67 270)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1129,17 +1090,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -15.24 1.27 0)
+				(pin input line
+					(at 15.24 7.62 180)
 					(length 2.54)
-					(name "DATA7"
+					(name "VBUS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1148,16 +1109,70 @@
 					)
 				)
 				(pin bidirectional line
-					(at -15.24 3.81 0)
+					(at 15.24 5.08 180)
 					(length 2.54)
-					(name "DATA6"
+					(name "DP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "DM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "ID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -13.97 180)
+					(length 2.54)
+					(name "RBIAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1166,6 +1181,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Oscillator:ASCO"
 			(exclude_from_sim no)
@@ -1280,6 +1296,24 @@
 					)
 				)
 				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
@@ -1315,25 +1349,8 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+1V8"
 			(power)
@@ -1411,7 +1428,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1423,7 +1440,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1437,7 +1454,8 @@
 			(symbol "+1V8_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+1V8"
 						(effects
 							(font
@@ -1454,6 +1472,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -1531,7 +1550,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1543,7 +1562,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1557,7 +1576,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1574,6 +1594,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1653,7 +1674,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1670,7 +1692,318 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(arc
+		(start 192.019 102.616)
+		(mid 191.6506 103.5155)
+		(end 190.754 103.886)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0a8d4973-143b-4a3f-bfc6-dc61e3282d96)
+	)
+	(arc
+		(start 89.921 97.023)
+		(mid 90.3763 97.2042)
+		(end 90.556 97.658)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 11bc13f2-df50-4b78-a75c-5c95721a7335)
+	)
+	(arc
+		(start 90.556 82.423)
+		(mid 90.925 81.527)
+		(end 91.821 81.153)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 2b18bd07-e28d-47d4-88e7-9182bf847dd7)
+	)
+	(arc
+		(start 192.654 95.636)
+		(mid 192.2023 95.4543)
+		(end 192.019 95.001)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3b76603e-3598-4fff-b167-e43d64be4a09)
+	)
+	(rectangle
+		(start 121.92 81.915)
+		(end 125.73 111.125)
+		(stroke
+			(width 0.1524)
+			(type dash_dot)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 439c3e5d-8496-4053-983b-fb42574214bf)
+	)
+	(arc
+		(start 190.749 87.386)
+		(mid 191.647 87.7559)
+		(end 192.019 88.651)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5bc9f8fc-e0fd-4f5d-a230-436cce2a3d22)
+	)
+	(arc
+		(start 90.556 96.388)
+		(mid 90.364 96.8296)
+		(end 89.921 97.023)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 64d5c113-c3d2-483d-bed7-081972329fdb)
+	)
+	(arc
+		(start 192.019 96.271)
+		(mid 192.2103 95.8259)
+		(end 192.654 95.636)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6be9b607-4c8e-4f69-9eec-29f23cf14f93)
+	)
+	(rectangle
+		(start 27.94 52.07)
+		(end 268.605 143.51)
+		(stroke
+			(width 0.7)
+			(type solid)
+			(color 168 168 168 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e660ea3d-fe8b-4a44-a4a1-e8a57a469174)
+	)
+	(rectangle
+		(start 162.306 96.012)
+		(end 167.386 99.441)
+		(stroke
+			(width 0.1524)
+			(type dot)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ec37085b-f9a6-4fd2-8014-8bf77e61d1c5)
+	)
+	(arc
+		(start 91.826 112.893)
+		(mid 90.9315 112.5225)
+		(end 90.556 111.628)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f8f7652e-a221-41e8-a94c-061cc76ca7ea)
+	)
+	(text "TO STM32"
+		(exclude_from_sim no)
+		(at 73.152 134.112 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(href "#2")
+		)
+		(uuid "014f3e36-10f4-464b-b0bd-86e594e4ad88")
+	)
+	(text "USB HS PHY"
+		(exclude_from_sim no)
+		(at 37.084 21.59 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "1919c28d-0a81-4055-a731-909e81998329")
+	)
+	(text "TO\nJ1"
+		(exclude_from_sim no)
+		(at 195.834 96.012 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 3 87 23 1)
+			)
+			(href "#15")
+		)
+		(uuid "3de83eda-1ffe-4f0d-8c53-3f0a49bfec34")
+	)
+	(text "USB ULPI"
+		(exclude_from_sim no)
+		(at 81.28 97.536 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 85 165 87 1)
+			)
+			(href "#7")
+		)
+		(uuid "f8d7b392-85d4-4a01-920a-5c882e9511cb")
+	)
+	(text_box "Usb HS PHY"
+		(exclude_from_sim no)
+		(at 27.94 52.07 0)
+		(size 22.86 4.318)
+		(margins 1.85 1.85 1.85 1.85)
+		(stroke
+			(width 0.7)
+			(type default)
+			(color 168 168 168 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(italic yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "643ddfee-71ee-45ac-96f9-fe5d61058dac")
+	)
+	(text_box "LAYOUT NOTE:\nDiff Pair, 90 Ohms Impedance\n"
+		(exclude_from_sim no)
+		(at 170.18 76.835 0)
+		(size 26.035 5.715)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 194 194 1)
+		)
+		(fill
+			(type color)
+			(color 61 172 255 0.4)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "97be7e4e-4f3c-4273-b34f-b40f9727464c")
+	)
+	(text_box "Example USB OTG external \nhardware Connection"
+		(exclude_from_sim no)
+		(at 200.66 52.07 0)
+		(size 45.085 8.89)
+		(margins 1.85 1.85 1.85 1.85)
+		(stroke
+			(width 0.7)
+			(type default)
+			(color 168 168 168 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(italic yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "987276d4-29d8-4295-96bf-f1b197febc73")
+	)
+	(text_box "LAYOUT NOTE:\nControlled Impedance 50 Ohms\nDelay matching +/- ?? ps"
+		(exclude_from_sim no)
+		(at 90.17 67.945 0)
+		(size 26.035 6.985)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 194 194 1)
+		)
+		(fill
+			(type color)
+			(color 61 172 255 0.4)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "a196066d-ed0c-4f74-90cd-24110aaa62e6")
+	)
+	(text_box "Block\nDiagram"
+		(exclude_from_sim no)
+		(at 154.94 169.545 0)
+		(size 20.574 28.448)
+		(margins 2.25 2.25 2.25 2.25)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+			)
+			(href "#1")
+		)
+		(uuid "e1b617f6-bab6-4f41-80b2-fb104546fe21")
 	)
 	(junction
 		(at 39.37 106.68)
@@ -2558,149 +2891,6 @@
 			(type default)
 		)
 		(uuid "fe99ae10-ff19-4123-87a3-28a3c3d7ed18")
-	)
-	(arc
-		(start 192.019 102.616)
-		(mid 191.6506 103.5155)
-		(end 190.754 103.886)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0a8d4973-143b-4a3f-bfc6-dc61e3282d96)
-	)
-	(arc
-		(start 89.921 97.023)
-		(mid 90.3763 97.2042)
-		(end 90.556 97.658)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 11bc13f2-df50-4b78-a75c-5c95721a7335)
-	)
-	(arc
-		(start 90.556 82.423)
-		(mid 90.925 81.527)
-		(end 91.821 81.153)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 2b18bd07-e28d-47d4-88e7-9182bf847dd7)
-	)
-	(arc
-		(start 192.654 95.636)
-		(mid 192.2023 95.4543)
-		(end 192.019 95.001)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3b76603e-3598-4fff-b167-e43d64be4a09)
-	)
-	(rectangle
-		(start 121.92 81.915)
-		(end 125.73 111.125)
-		(stroke
-			(width 0.1524)
-			(type dash_dot)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 439c3e5d-8496-4053-983b-fb42574214bf)
-	)
-	(arc
-		(start 190.749 87.386)
-		(mid 191.647 87.7559)
-		(end 192.019 88.651)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 5bc9f8fc-e0fd-4f5d-a230-436cce2a3d22)
-	)
-	(arc
-		(start 90.556 96.388)
-		(mid 90.364 96.8296)
-		(end 89.921 97.023)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 64d5c113-c3d2-483d-bed7-081972329fdb)
-	)
-	(arc
-		(start 192.019 96.271)
-		(mid 192.2103 95.8259)
-		(end 192.654 95.636)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6be9b607-4c8e-4f69-9eec-29f23cf14f93)
-	)
-	(rectangle
-		(start 27.94 52.07)
-		(end 268.605 143.51)
-		(stroke
-			(width 0.7)
-			(type solid)
-			(color 168 168 168 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid e660ea3d-fe8b-4a44-a4a1-e8a57a469174)
-	)
-	(rectangle
-		(start 162.306 96.012)
-		(end 167.386 99.441)
-		(stroke
-			(width 0.1524)
-			(type dot)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ec37085b-f9a6-4fd2-8014-8bf77e61d1c5)
-	)
-	(arc
-		(start 91.826 112.893)
-		(mid 90.9315 112.5225)
-		(end 90.556 111.628)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid f8f7652e-a221-41e8-a94c-061cc76ca7ea)
 	)
 	(image
 		(at 234.95 100.33)
@@ -4732,174 +4922,47 @@
 			"AABgHWpXWbpx44ZM01SxWNSFCxcISctARQkAAABYx9yVpf3796uvr0/ffPONLly4IMuy1rqL6xJB"
 			"CQAAAFjn5oelOwhJK8PUOwAAAGCd2759uy5fvqw9e/ZIks6ePUtIWiEqSgAAAMAG8euvv+r777/X"
 			"E088sdZdWfcISgAAAADgwtQ7AAAAAHAhKAEAAACAC0EJAAAAAFwISgAAAADgQlACAAAAAJf/By4e"
-			"QaVPQHcOAAAAAElFTkSuQmCC"
+			"QaVPQHcOAAAAAElFTkSuQmCCegAAAGYAAAAvAAAAcgAAAFQAAABuAAAAOAAAAHEAAAAyAAAAZgAA"
+			"AHoAAABpAAAATAAAAHgAAABXAAAASgAAAFkAAAByAAAAVgAAAFkAAABXAAAATAAAAEYAAABnAAAA"
+			"dwAAAGEAAABiAAAAbQAAAFAAAABmAAAALwAAAHoAAABqAAAARwAAAEkAAABaAAAAUgAAADQAAABh"
+			"AAAAdwAAAGQAAABuAAAAKwAAADYAAABuAAAAcgAAAHEAAAB1AAAAVAAAAFgAAABpAAAATgAAAEcA"
+			"AABSAAAAZwAAAC8AAABpAAAASAAAAEQAAABwAAAAVAAAAFMAAABKAAAAaAAAAEUAAABCAAAAOAAA"
+			"AEQAAABTAAAAcAAAAEsAAABOAAAAVgAAAFgAAABPAAAATgAAAGoAAABvAAAAYgAAAEUAAAB0AAAA"
+			"aQAAAE8AAABiAAAAZQAAADkAAAAvAAAAZQAAAFgAAAB5AAAAKwAAAFUAAABvAAAANQAAAEQAAABL"
+			"AAAAawAAAEUAAAAzAAAARwAAADYAAAArAAAAMQAAAFoAAAB6AAAAbwAAAFQAAAB2AAAATwAAADQA"
+			"AABtAAAAZwAAAEMAAAAwAAAAMQAAAC8AAAA3AAAAbQAAADQAAAAvAAAAZAAAAG8AAAAyAAAATQAA"
+			"AG0AAABkAAAAWQAAAHgAAABzAAAAaQAAAGsAAABRAAAAaQAAAFEAAABUAAAAdwAAAGUAAABKAAAA"
+			"eAAAAEYAAABQAAAAMAAAAEQAAABkAAAAWQAAAFoAAABMAAAAQgAAADMAAABJAAAANwAAAGMAAAB0"
+			"AAAAMgAAAGsAAABnAAAAMAAAAHUAAABwAAAANQAAADQAAABMAAAAUAAAAEMAAAAyAAAAMgAAAHgA"
+			"AABSAAAAWQAAAHYAAABCAAAAMAAAAFUAAABSAAAAcAAAADUAAABaAAAANwAAAEkAAAA3AAAAUgAA"
+			"ADMAAAAyAAAARQAAAFoAAABvAAAAawAAAFkAAABQAAAAUgAAAGMAAABDAAAAVwAAAE4AAABRAAAA"
+			"bAAAAG8AAABzAAAAVAAAAEgAAABMAAAAOQAAAEEAAABxAAAANQAAAEwAAABGAAAAYQAAAGcAAAAy"
+			"AAAARwAAADgAAABTAAAAUwAAAFgAAABSAAAAZwAAAFYAAABqAAAAUAAAADEAAABaAAAAawAAAG8A"
+			"AAAxAAAAYQAAAGoAAABPAAAAWAAAAEoAAABPAAAAegAAADMAAAAwAAAAZAAAADYAAABUAAAAaAAA"
+			"AC8AAABvAAAAMgAAAE4AAABpAAAAUwAAAGkAAABqAAAAQgAAADYAAABjAAAARwAAAHUAAAAwAAAA"
+			"ZAAAADcAAAAzAAAAZwAAAFQAAABGAAAAMQAAAGQAAABxAAAAZQAAAGYAAABzAAAAVAAAAGEAAABz"
+			"AAAAMwAAAFMAAAA0AAAAWAAAADIAAABXAAAATAAAAEsAAABwAAAAeAAAADQAAABwAAAAQwAAAFkA"
+			"AABFAAAAQgAAAFYAAABNAAAAWgAAADAAAABSAAAAcAAAACsAAABIAAAAZgAAAEgAAABvAAAAbAAA"
+			"AHAAAABIAAAANwAAADgAAABNAAAANAAAADUAAABiAAAAcgAAAEcAAABmAAAAUgAAADkAAABiAAAA"
+			"NgAAADgAAABUAAAAUgAAAG4AAAB6AAAARwAAAHEAAABmAAAAVwAAADYAAABwAAAAUQAAAFoAAAB0"
+			"AAAANwAAAHQAAAAyAAAAOQAAAFEAAABiAAAAVQAAAE4AAABaAAAAawAAADIAAAAxAAAATgAAAHkA"
+			"AAB5AAAAdgAAAHUAAABjAAAAVAAAAG4AAABzAAAAcAAAAHAAAAB0AAAAdQAAAFUAAABvAAAARAAA"
+			"AEsAAAA1AAAAWAAAAEsAAABUAAAAbAAAAG4AAAB2AAAAdgAAAGUAAAA5AAAAKwAAAHIAAABMAAAA"
+			"cgAAAHIAAABvAAAAbwAAAHAAAABIAAAALwAAAGYAAAAvAAAAbgAAAGwAAABsAAAAMgAAAFYAAABF"
+			"AAAAcQAAAFIAAABhAAAAKwAAADgAAABZAAAAMQAAAHYAAAAwAAAATgAAAFQAAABVAAAAaAAAAEYA"
+			"AABMAAAAcQAAAFkAAABIAAAAZQAAAGwAAABvAAAAbAAAAHQAAAB1AAAAdQAAAFkAAABXAAAAbgAA"
+			"AG4AAABuAAAAcgAAAHEAAABZAAAASAAAAGQAAABqAAAAQwAAAGkAAAA2AAAAQwAAAFoAAABwAAAA"
+			"aQAAAG8AAAArAAAAMQAAAHAAAAA2AAAAdQAAADMAAABUAAAAMAAAAHEAAABKAAAAZAAAAG8AAAB0"
+			"AAAAUQAAAE0AAAA5AAAATQAAACsAAABMAAAAQQAAAFoAAABRAAAAYwAAAEcAAABpAAAAdQAAAFMA"
+			"AAB5AAAATwAAAGEAAABnAAAAcQAAAFQAAAAxAAAASwAAAE8AAABiAAAARAAAAFoAAABmAAAAcQAA"
+			"AHUAAAAwAAAAYwAAAFgAAABiAAAANwAAADAAAAB4AAAAcQAAAE4AAABZAAAAZwAAAEEAAABLAAAA"
+			"VAAAAEoAAABVAAAANAAAAHEAAABqAAAASgAAAFMAAAAzAAAASAAAAGsAAABKAAAAYgAAAHMAAABB"
+			"AAAAKwAAAC8AAABnAAAAVgAAACsAAAA1AAAAYwAAAGkAAABVAAAAZQAAAGoAAAArAAAAZQAAAEEA"
+			"AAB0AAAALwAAAC8AAAA0AA=="
 		)
-	)
-	(text_box "Usb HS PHY"
-		(exclude_from_sim no)
-		(at 27.94 52.07 0)
-		(size 22.86 4.318)
-		(stroke
-			(width 0.7)
-			(type default)
-			(color 168 168 168 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-				(italic yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "643ddfee-71ee-45ac-96f9-fe5d61058dac")
-	)
-	(text_box "LAYOUT NOTE:\nDiff Pair, 90 Ohms Impedance\n"
-		(exclude_from_sim no)
-		(at 170.18 76.835 0)
-		(size 26.035 5.715)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 0 194 194 1)
-		)
-		(fill
-			(type color)
-			(color 61 172 255 0.4)
-		)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "97be7e4e-4f3c-4273-b34f-b40f9727464c")
-	)
-	(text_box "Example USB OTG external \nhardware Connection"
-		(exclude_from_sim no)
-		(at 200.66 52.07 0)
-		(size 45.085 8.89)
-		(stroke
-			(width 0.7)
-			(type default)
-			(color 168 168 168 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-				(italic yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "987276d4-29d8-4295-96bf-f1b197febc73")
-	)
-	(text_box "LAYOUT NOTE:\nControlled Impedance 50 Ohms\nDelay matching +/- ?? ps"
-		(exclude_from_sim no)
-		(at 90.17 67.945 0)
-		(size 26.035 6.985)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 0 194 194 1)
-		)
-		(fill
-			(type color)
-			(color 61 172 255 0.4)
-		)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "a196066d-ed0c-4f74-90cd-24110aaa62e6")
-	)
-	(text_box "Block\nDiagram"
-		(exclude_from_sim no)
-		(at 154.94 169.545 0)
-		(size 20.574 28.448)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.6)
-				(bold yes)
-				(italic yes)
-			)
-			(href "#1")
-		)
-		(uuid "e1b617f6-bab6-4f41-80b2-fb104546fe21")
-	)
-	(text "TO STM32"
-		(exclude_from_sim no)
-		(at 73.152 134.112 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(href "#2")
-		)
-		(uuid "014f3e36-10f4-464b-b0bd-86e594e4ad88")
-	)
-	(text "USB HS PHY"
-		(exclude_from_sim no)
-		(at 37.084 21.59 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 1)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "1919c28d-0a81-4055-a731-909e81998329")
-	)
-	(text "TO\nJ1"
-		(exclude_from_sim no)
-		(at 195.834 96.012 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 3 87 23 1)
-			)
-			(href "#15")
-		)
-		(uuid "3de83eda-1ffe-4f0d-8c53-3f0a49bfec34")
-	)
-	(text "USB ULPI"
-		(exclude_from_sim no)
-		(at 81.28 97.536 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 85 165 87 1)
-			)
-			(href "#7")
-		)
-		(uuid "f8d7b392-85d4-4a01-920a-5c882e9511cb")
 	)
 	(label "RBIAS"
 		(at 162.56 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -4910,7 +4973,6 @@
 	)
 	(label "USB_ULPI_CLKOUT_T"
 		(at 120.65 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -4921,7 +4983,6 @@
 	)
 	(label "CLK_13MHz"
 		(at 67.31 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -4932,7 +4993,6 @@
 	)
 	(label "13MHz_1V8"
 		(at 46.99 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4943,7 +5003,6 @@
 	)
 	(label "USB_REFCLK_13MHz"
 		(at 93.98 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

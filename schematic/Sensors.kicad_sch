@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "40427d69-6335-4630-9746-942ec3ab7b98")
 	(paper "A4")
 	(title_block
@@ -11,9 +11,13 @@
 	)
 	(lib_symbols
 		(symbol "C_Small_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -101,10 +105,10 @@
 			(symbol "C_Small_1_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -113,10 +117,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -162,6 +166,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MyLibrary:BMI323"
 			(exclude_from_sim no)
@@ -240,60 +245,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "CSB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -10.16 5.08 0)
 					(length 2.54)
@@ -330,17 +281,17 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 2.54) hide
-					(name "NC"
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "CSB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -348,17 +299,17 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 2.54) hide
-					(name "NC"
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "INT2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -385,16 +336,16 @@
 					)
 				)
 				(pin input line
-					(at 3.81 12.7 270)
+					(at 0 12.7 270)
 					(length 2.54)
-					(name "VDDIO"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -421,6 +372,24 @@
 					)
 				)
 				(pin input line
+					(at 3.81 12.7 270)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
 					(at 3.81 -12.7 90)
 					(length 2.54)
 					(name "GND"
@@ -438,17 +407,18 @@
 						)
 					)
 				)
-				(pin input line
-					(at 0 12.7 270)
+				(pin no_connect line
+					(at 10.16 0 180)
 					(length 2.54)
-					(name "VDD"
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -456,17 +426,56 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -5.08 0)
+				(pin no_connect line
+					(at 10.16 0 180)
 					(length 2.54)
-					(name "INT2"
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -475,6 +484,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+1V0"
 			(power)
@@ -552,7 +562,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -564,7 +574,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -578,7 +588,8 @@
 			(symbol "+1V0_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+1V0"
 						(effects
 							(font
@@ -595,6 +606,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+1V8"
 			(power)
@@ -672,7 +684,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -684,7 +696,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -698,7 +710,8 @@
 			(symbol "+1V8_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+1V8"
 						(effects
 							(font
@@ -715,12 +728,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -811,7 +829,144 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(arc
+		(start 125.096 104.769)
+		(mid 124.2012 104.3988)
+		(end 123.826 103.504)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3a62b836-e8ff-41c2-8fda-d177295af368)
+	)
+	(arc
+		(start 123.83 94.61)
+		(mid 123.6384 95.0526)
+		(end 123.195 95.245)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 63f1396a-9c09-4eca-986c-3bef87ea284e)
+	)
+	(arc
+		(start 123.195 95.245)
+		(mid 123.65 95.4265)
+		(end 123.83 95.88)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8b462140-295b-4052-80db-01875f5f21fb)
+	)
+	(arc
+		(start 123.826 86.999)
+		(mid 124.1954 86.1041)
+		(end 125.091 85.729)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a5560b91-74b9-4ef0-b2ff-2a26d0b10f74)
+	)
+	(rectangle
+		(start 104.775 59.055)
+		(end 178.435 120.015)
+		(stroke
+			(width 0.7)
+			(type solid)
+			(color 168 168 168 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b499a791-b614-4bf8-b53f-d6b265cf259a)
+	)
+	(text "Inertial Measurement Unit"
+		(exclude_from_sim no)
+		(at 68.834 21.59 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "51b76306-3bf5-4514-9f1b-88578ea4c2f8")
+	)
+	(text "TO Zynq \nPL"
+		(exclude_from_sim no)
+		(at 116.586 94.996 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 3 87 23 1)
+			)
+		)
+		(uuid "e2d18d5f-40e0-4a4f-8337-acfb33459c26")
+	)
+	(text_box "Block\nDiagram"
+		(exclude_from_sim no)
+		(at 154.94 169.545 0)
+		(size 20.574 28.448)
+		(margins 2.25 2.25 2.25 2.25)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+			)
+			(href "#1")
+		)
+		(uuid "90ccf9ca-f5d5-4543-896f-1fe10cd8640d")
+	)
+	(text_box "IMU"
+		(exclude_from_sim no)
+		(at 104.775 59.055 0)
+		(size 15.24 6.985)
+		(margins 2.225 2.225 2.225 2.225)
+		(stroke
+			(width 0.7)
+			(type default)
+			(color 168 168 168 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "c12ec756-81b7-497c-a76b-e4fb07a97ce7")
 	)
 	(junction
 		(at 144.78 73.66)
@@ -944,140 +1099,6 @@
 			(type default)
 		)
 		(uuid "e48472e3-3916-4fe9-9b10-463154634be9")
-	)
-	(arc
-		(start 125.096 104.769)
-		(mid 124.2012 104.3988)
-		(end 123.826 103.504)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3a62b836-e8ff-41c2-8fda-d177295af368)
-	)
-	(arc
-		(start 123.83 94.61)
-		(mid 123.6384 95.0526)
-		(end 123.195 95.245)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 63f1396a-9c09-4eca-986c-3bef87ea284e)
-	)
-	(arc
-		(start 123.195 95.245)
-		(mid 123.65 95.4265)
-		(end 123.83 95.88)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8b462140-295b-4052-80db-01875f5f21fb)
-	)
-	(arc
-		(start 123.826 86.999)
-		(mid 124.1954 86.1041)
-		(end 125.091 85.729)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a5560b91-74b9-4ef0-b2ff-2a26d0b10f74)
-	)
-	(rectangle
-		(start 104.775 59.055)
-		(end 178.435 120.015)
-		(stroke
-			(width 0.7)
-			(type solid)
-			(color 168 168 168 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid b499a791-b614-4bf8-b53f-d6b265cf259a)
-	)
-	(text_box "Block\nDiagram"
-		(exclude_from_sim no)
-		(at 154.94 169.545 0)
-		(size 20.574 28.448)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.6)
-				(bold yes)
-				(italic yes)
-			)
-			(href "#1")
-		)
-		(uuid "90ccf9ca-f5d5-4543-896f-1fe10cd8640d")
-	)
-	(text_box "IMU"
-		(exclude_from_sim no)
-		(at 104.775 59.055 0)
-		(size 15.24 6.985)
-		(stroke
-			(width 0.7)
-			(type default)
-			(color 168 168 168 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "c12ec756-81b7-497c-a76b-e4fb07a97ce7")
-	)
-	(text "Inertial Measurement Unit"
-		(exclude_from_sim no)
-		(at 68.834 21.59 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 1)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "51b76306-3bf5-4514-9f1b-88578ea4c2f8")
-	)
-	(text "TO Zynq \nPL"
-		(exclude_from_sim no)
-		(at 116.586 94.996 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 3 87 23 1)
-			)
-		)
-		(uuid "e2d18d5f-40e0-4a4f-8337-acfb33459c26")
 	)
 	(global_label "IO_L8_N_33"
 		(shape input)

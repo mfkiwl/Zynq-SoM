@@ -6,11 +6,16 @@ This repository contains the hardware design files for a System on Module based 
 <!-- ![](img/zynq_pcb_render_test.png) -->
 <!-- ![](img/pcb2blender_test_dark.png) -->
 ![](pictures/renderino_close_to_final.png)
+
+
 ## Description
 
 > [!Warning] 
-> The first prototype is under testing. The design has not been fully verified.
+> First prototype is under testing. The design has not been fully verified.
 
+#### Block Diagram
+
+![](pictures/Block%20Diagram.png)
 ##  Features
 
 Memory

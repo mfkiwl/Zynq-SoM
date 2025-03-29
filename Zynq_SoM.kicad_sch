@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "9d6eea33-5ef7-40fb-8bed-868692275d9e")
 	(paper "A4")
 	(title_block
@@ -10,6 +10,909 @@
 		(rev "1.0")
 	)
 	(lib_symbols)
+	(rectangle
+		(start 62.23 57.15)
+		(end 110.49 148.59)
+		(stroke
+			(width 0.35)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 185 255 190 1)
+		)
+		(uuid 0f299551-acbd-446b-b512-250ce40e2756)
+	)
+	(text "10 x Single ended"
+		(exclude_from_sim no)
+		(at 44.196 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "0ac0bcb3-677c-438e-855f-ba18d2561499")
+	)
+	(text "PS MIO 500"
+		(exclude_from_sim no)
+		(at 70.612 128.778 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#7")
+		)
+		(uuid "0c5513e0-f883-4703-906e-8e4a7e3b83bf")
+	)
+	(text "7 x Single ended"
+		(exclude_from_sim no)
+		(at 40.64 135.636 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "0d223e01-f1ea-44b3-a87c-e65b58c02aa7")
+	)
+	(text "J2"
+		(exclude_from_sim no)
+		(at 145.796 104.648 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#15")
+		)
+		(uuid "0f81d884-45fd-481e-9af6-c6eea90c36a8")
+	)
+	(text "Ethernet\nPHY"
+		(exclude_from_sim no)
+		(at 48.26 84.836 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#9")
+		)
+		(uuid "1349f16f-3941-4ed2-924c-30534c489aa7")
+	)
+	(text "USB HS PHY"
+		(exclude_from_sim no)
+		(at 48.26 99.06 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.3)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#10")
+		)
+		(uuid "16b1760e-f5ca-40ba-97b5-a242831b9b8a")
+	)
+	(text "DESIGN CONSIDERATIONS"
+		(exclude_from_sim no)
+		(at 171.704 134.747 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+				(color 52 66 160 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1798df86-92f1-4f88-8f2f-3ff0e3ec105d")
+	)
+	(text "DRAFT, PRELIMINARY, CHECKED, RELEASED\n"
+		(exclude_from_sim no)
+		(at 171.704 162.306 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.6)
+				(bold yes)
+				(color 139 139 139 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f57d224-0578-4f87-8ac0-925ca8abf3be")
+	)
+	(text "PS_MIO_502"
+		(exclude_from_sim no)
+		(at 72.39 147.066 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#11")
+		)
+		(uuid "28458385-a3bc-4b24-8353-a1f78c72856d")
+	)
+	(text "USB 2.0 FS"
+		(exclude_from_sim no)
+		(at 34.036 147.574 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "288d93e0-b428-454a-840f-bbdcce6f6a8d")
+	)
+	(text "Revision: ${REVISION}"
+		(exclude_from_sim no)
+		(at 182.118 52.324 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 5 5)
+				(thickness 1.125)
+			)
+		)
+		(uuid "2f15785f-3c86-4f5d-ae1f-453b8ba8604a")
+	)
+	(text "eMMC"
+		(exclude_from_sim no)
+		(at 43.18 111.76 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#8")
+		)
+		(uuid "2fba1d66-18ce-48c8-ae9c-bfc999e3978e")
+	)
+	(text "${BOARD_NAME}"
+		(exclude_from_sim no)
+		(at 215.9 29.972 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 9 9)
+				(thickness 1.125)
+			)
+		)
+		(uuid "40bb6ebe-4f7e-4e93-8be5-206c2b10c67c")
+	)
+	(text "SCHEMATIC STATUS NOTES"
+		(exclude_from_sim no)
+		(at 171.45 158.242 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+				(color 52 66 160 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "4513893d-9c2d-4699-94f5-025dbe1dae12")
+	)
+	(text "USB 2.0 HS "
+		(exclude_from_sim no)
+		(at 33.528 97.028 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4583b217-bc05-4dc0-98d7-3caff91c2ca3")
+	)
+	(text "IMU"
+		(exclude_from_sim no)
+		(at 129.54 68.326 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#14")
+		)
+		(uuid "4c71f67c-9a66-4caf-a427-d707b301fc1d")
+	)
+	(text "10 x Diff pairs\n14 x Single ended"
+		(exclude_from_sim no)
+		(at 85.598 42.926 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "4e8eb2c3-0859-4309-bd26-b022bb8e1bf4")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 55.88 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4ec27334-6030-4e63-9335-021f9670065b")
+	)
+	(text "PL   - Programmable Logic (FPGA fabric)\nPS   - Processing System (Dual Core ARM A9)\nMIO  - Multiplexed I/O\nBank - Group of I/O pins that share common \n	     resources (e.g. power supply)\nPD   - USB Power Delivery\n"
+		(exclude_from_sim no)
+		(at 171.958 125.476 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.6)
+				(bold yes)
+				(color 139 139 139 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ef4d997-bb34-4d67-b3c6-d7876362cf05")
+	)
+	(text "TOP VIEW"
+		(exclude_from_sim no)
+		(at 180.848 65.024 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+				(color 52 66 160 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "52bdd58e-941b-4b77-8b6c-c5c73515a375")
+	)
+	(text "Power Supplies"
+		(exclude_from_sim no)
+		(at 90.424 174.498 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#4")
+		)
+		(uuid "54db5c3b-1817-48ca-9199-dcc16676596c")
+	)
+	(text "Variant: ${VARIANT}"
+		(exclude_from_sim no)
+		(at 192.278 44.704 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 5 5)
+				(thickness 1.125)
+			)
+		)
+		(uuid "5645908f-b8d9-478a-923f-bbb9946eb609")
+	)
+	(text "6 x Single ended"
+		(exclude_from_sim no)
+		(at 44.45 117.094 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "589011b3-f43c-410d-904f-29c0ce9e5b2b")
+	)
+	(text "PL Bank 13"
+		(exclude_from_sim no)
+		(at 100.1516 109.1221 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#13")
+		)
+		(uuid "58aacb3c-2acc-4bb6-98b9-fdcd3532a237")
+	)
+	(text "1 x Gpio"
+		(exclude_from_sim no)
+		(at 58.42 151.892 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "625af0e9-d4a8-4c0d-91a1-7579a2d1f215")
+	)
+	(text "PS MIO 501"
+		(exclude_from_sim no)
+		(at 70.612 88.9 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#7")
+		)
+		(uuid "6ef592ec-b687-4906-a0fd-6226769fb845")
+	)
+	(text "11 x Diff pairs\n22 x Single ended"
+		(exclude_from_sim no)
+		(at 119.126 112.014 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "72c83c4d-2d02-48b6-8999-54c8e6b592a2")
+	)
+	(text "BOTTOM VIEW"
+		(exclude_from_sim no)
+		(at 223.266 65.278 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+				(color 52 66 160 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f534c5e-faa3-421e-96ae-6ddb00528230")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 255.524 45.466 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 5 5)
+				(thickness 1.125)
+			)
+		)
+		(uuid "80be46a2-2efb-423c-97dc-ca07a03f8efd")
+	)
+	(text "Reset"
+		(exclude_from_sim no)
+		(at 56.896 149.606 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "82245b07-abd9-4181-9e96-f4dbdebaea23")
+	)
+	(text "OTG"
+		(exclude_from_sim no)
+		(at 33.02 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "8254dc7e-9626-42bb-9081-0644fcd56b7a")
+	)
+	(text "PL Bank 34"
+		(exclude_from_sim no)
+		(at 100.838 63.5 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#12")
+		)
+		(uuid "82ab441f-cda3-44ad-974a-106dbd596626")
+	)
+	(text "NOTES"
+		(exclude_from_sim no)
+		(at 171.45 104.648 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+				(color 52 66 160 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "92b04d76-c087-4376-bf71-04e860b5971b")
+	)
+	(text "PS MIO 500"
+		(exclude_from_sim no)
+		(at 70.866 137.16 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#7")
+		)
+		(uuid "95c31559-f174-434a-ab65-1897ccba514d")
+	)
+	(text "J3"
+		(exclude_from_sim no)
+		(at 84.836 32.766 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#15")
+		)
+		(uuid "9cdcc05a-7863-4dac-a368-2806670e5425")
+	)
+	(text "J1"
+		(exclude_from_sim no)
+		(at 23.876 105.41 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#15")
+		)
+		(uuid "aeea0b5b-5e8f-4f71-939f-4d1ce8d780d6")
+	)
+	(text "System\nController"
+		(exclude_from_sim no)
+		(at 46.99 162.052 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#2")
+		)
+		(uuid "af452414-112c-4529-b96a-4656251e3dcc")
+	)
+	(text "PS MIO 501"
+		(exclude_from_sim no)
+		(at 70.358 115.062 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#7")
+		)
+		(uuid "afb54f1d-a5fa-4830-abac-46b8b62e1b59")
+	)
+	(text "3V3 JTAG"
+		(exclude_from_sim no)
+		(at 43.688 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "bb24dfb1-df6a-47ed-8928-e15400883973")
+	)
+	(text "PL Bank 0"
+		(exclude_from_sim no)
+		(at 72.39 76.2 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#6")
+		)
+		(uuid "bb5f9aa3-3fc4-4e39-98a8-d2565a88532a")
+	)
+	(text "Zynq 7020"
+		(exclude_from_sim no)
+		(at 85.598 54.356 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 5.5 5.5)
+				(thickness 0.254)
+				(bold yes)
+				(color 52 66 160 1)
+			)
+		)
+		(uuid "c1b41a19-13fb-493c-b069-cd9dc9a4eec5")
+	)
+	(text "4 x Diff pairs\n2 x Single ended"
+		(exclude_from_sim no)
+		(at 116.84 43.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "c36c778d-341e-4dd7-805f-4e8284baa65b")
+	)
+	(text "4 x EN,PGOOD,SENSE"
+		(exclude_from_sim no)
+		(at 62.738 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "e12399d3-0b31-4438-9dca-4427bb2f9e7e")
+	)
+	(text "13 x Diff pairs"
+		(exclude_from_sim no)
+		(at 58.42 42.418 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "e2c68c0c-dc73-4867-9d36-81f678fefb8b")
+	)
+	(text "10 x Diff pairs\n8 x Single ended"
+		(exclude_from_sim no)
+		(at 118.872 89.154 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "e319b353-ccf1-4ecf-80d3-12dd51a0f24e")
+	)
+	(text "PS MIO 501"
+		(exclude_from_sim no)
+		(at 70.358 98.806 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#7")
+		)
+		(uuid "ea4b14f1-e203-41e6-b9fa-e7856a878cda")
+	)
+	(text "Power"
+		(exclude_from_sim no)
+		(at 100.838 138.176 0)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+				(color 8 8 8 1)
+			)
+			(href "#5")
+		)
+		(uuid "f22d0405-d2ae-4c31-90a8-b0372f5b6250")
+	)
+	(text "10 x Gpio, Reset, Boot"
+		(exclude_from_sim no)
+		(at 39.116 139.954 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "fb284bdd-c390-43c9-8529-e6e8343bb750")
+	)
+	(text "PD"
+		(exclude_from_sim no)
+		(at 34.544 150.876 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "fc6964d3-e6fb-4d8c-96e0-a73a63621f9c")
+	)
+	(text_box "Boot\nFlash"
+		(exclude_from_sim no)
+		(at 36.83 120.65 0)
+		(size 12.7 10.16)
+		(margins 1.675 1.675 1.675 1.675)
+		(stroke
+			(width 0.35)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 247 158 1)
+		)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(href "#8")
+		)
+		(uuid "13d7d9dc-306b-4876-bc08-e3ff5c56847d")
+	)
+	(text_box "DESIGN NOTE:\n\nExample text for critical design notes.\n"
+		(exclude_from_sim no)
+		(at 191.262 136.906 0)
+		(size 17.78 10.795)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 194 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+				(color 194 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "18ef3f9d-71a0-4e7a-b3af-d459b6d2d0b7")
+	)
+	(text_box "PL Bank 33"
+		(exclude_from_sim no)
+		(at 90.17 77.47 0)
+		(size 20.32 10.16)
+		(margins 1.5762 1.5762 1.5762 1.5762)
+		(stroke
+			(width 0.1524)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 185 255 190 1)
+		)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(href "#13")
+		)
+		(uuid "434d8cda-b089-40f9-9a7c-767325378858")
+	)
+	(text_box ""
+		(exclude_from_sim no)
+		(at 34.29 29.21 90)
+		(size 104.14 5.08)
+		(margins 1.675 1.675 1.675 1.675)
+		(stroke
+			(width 0.35)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 132 172 255 1)
+		)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(href "#12")
+		)
+		(uuid "51816baf-10d2-4df9-8847-f40156132a3b")
+	)
+	(text_box "DESIGN NOTE:\n\nExample text for informational design notes.\n"
+		(exclude_from_sim no)
+		(at 171.577 136.906 0)
+		(size 17.78 10.795)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 168 168 168 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left)
+		)
+		(uuid "7f117030-9885-4ba2-bc92-2562e9ad7cc7")
+	)
+	(text_box "DDR3L"
+		(exclude_from_sim no)
+		(at 67.31 153.67 0)
+		(size 15.24 5.08)
+		(margins 1.675 1.675 1.675 1.675)
+		(stroke
+			(width 0.35)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 247 158 1)
+		)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(href "#11")
+		)
+		(uuid "8e37fbf7-1ec5-4ca7-b09f-b547d6e0679e")
+	)
+	(text_box ""
+		(exclude_from_sim no)
+		(at 21.59 52.07 0)
+		(size 5.08 104.14)
+		(margins 1.675 1.675 1.675 1.675)
+		(stroke
+			(width 0.35)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 132 172 255 1)
+		)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(href "#15")
+		)
+		(uuid "9c71f94f-c7ec-4cb0-a182-c6599829065f")
+	)
+	(text_box "PL Bank 35"
+		(exclude_from_sim no)
+		(at 62.23 57.15 0)
+		(size 20.32 10.16)
+		(margins 1.5762 1.5762 1.5762 1.5762)
+		(stroke
+			(width 0.1524)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 185 255 190 1)
+		)
+		(effects
+			(font
+				(face "Timmana")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(href "#12")
+		)
+		(uuid "c762f9a5-2231-44eb-bc25-df9fe9f7474b")
+	)
+	(text_box "LAYOUT NOTE:\n\nExample text for layout notes.\n"
+		(exclude_from_sim no)
+		(at 210.947 136.906 0)
+		(size 17.78 10.795)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 194 194 1)
+		)
+		(fill
+			(type color)
+			(color 61 172 255 0.4)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "f5714354-db55-4408-a9ad-09b9de255eef")
+	)
 	(polyline
 		(pts
 			(xy 26.67 140.97) (xy 46.99 140.97)
@@ -306,20 +1209,6 @@
 			(color 0 0 0 1)
 		)
 		(uuid "fed48e55-9ebc-40d8-ba48-2da95adde0aa")
-	)
-	(rectangle
-		(start 62.23 57.15)
-		(end 110.49 148.59)
-		(stroke
-			(width 0.35)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 185 255 190 1)
-		)
-		(uuid 0f299551-acbd-446b-b512-250ce40e2756)
 	)
 	(image
 		(at 188.595 82.55)
@@ -9771,7 +10660,43 @@
 			"vbfu/Pj6T5u4W6qec96WVbWIg6vX+3vKufRT9w+tO9DLRfBpKhVYepgRnAEAgP+a9x+/e/f2z3d+"
 			"mK76RLof+pqjdjxfd+ArM6NNZVrdxiQ7ykR7Po549qWwjOAMAADcIKeP7909ujg6P3lx8nBsQ4/d"
 			"555W6nGvi7dfvvndp89/8bcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAA/Jk/AIvsFydvfhKXAAAAAElFTkSuQmCC"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAA/Jk/AIvsFydvfhKXAAAAAElFTkSuQmCCAGkAAABWAAAAVgAA"
+			"AFoAAABDAAAAVAAAAG4AAABMAAAATgAAAGwAAABTAAAAUQAAADYAAABuAAAARQAAADYAAABUAAAA"
+			"eAAAADIAAABzAAAAYgAAAGUAAABNAAAARAAAAHEAAABoAAAAbgAAAFgAAABKAAAAZAAAAGUAAABI"
+			"AAAAcQAAACsAAABuAAAALwAAADcAAAAzAAAAVQAAAEsAAAA4AAAAKwAAAFIAAABOAAAAagAAAE8A"
+			"AABJAAAARQAAAHcAAABEAAAAeQAAAFIAAAA1AAAALwAAADkAAABMAAAALwAAAHoAAAAwAAAASwAA"
+			"ADkAAAA1AAAASgAAAHEAAAB6AAAAWAAAAEgAAAA5AAAAbQAAADAAAABiAAAARQAAAEEAAABLAAAA"
+			"YQAAAEEAAAA0AAAATQAAAGcAAABvAAAARAAAAGsAAAA0AAAAeQAAAEkAAABiAAAATgAAAG0AAAA3"
+			"AAAARgAAAGYAAAArAAAAbQAAAEwAAAAyAAAAbgAAAGoAAAB6AAAASgAAAGsAAABSAAAAOQAAACsA"
+			"AABoAAAAMgAAAHEAAABsAAAAaAAAAG0AAABWAAAAWgAAAGYAAABQAAAAdQAAAGUAAAByAAAAKwAA"
+			"AHUAAAAxAAAATwAAADEAAABKAAAAYwAAAHUAAABQAAAAMwAAAEMAAAB1AAAATwAAAEYAAABWAAAA"
+			"RAAAAGkAAABUAAAATgAAADYAAAAwAAAAOAAAAFUAAABQAAAAcQAAAHMAAAB5AAAAOAAAAFAAAAB4"
+			"AAAAcwAAAFgAAAB3AAAAZgAAAFMAAABJAAAAKwAAAGkAAABzAAAAWAAAAFAAAABnAAAAMgAAAHoA"
+			"AABkAAAAZAAAAHIAAAA2AAAASQAAAFoAAABtAAAAaAAAAFEAAABqAAAAcAAAAGgAAABBAAAAVAAA"
+			"ADQAAABoAAAAcwAAAE8AAAA2AAAAZAAAAGcAAABOAAAAVwAAAEUAAABnAAAAeQAAAHIAAAA1AAAA"
+			"RAAAAEoAAABVAAAAbwAAAG8AAABGAAAAVgAAAEgAAABKAAAAdgAAAGwAAAAyAAAAUgAAAHAAAABN"
+			"AAAAKwAAAHEAAABFAAAASgAAAG8AAABHAAAATwAAAGwAAABoAAAARQAAAFcAAAArAAAAWQAAAFYA"
+			"AABOAAAAbwAAADMAAABnAAAAbwAAAGgAAAArAAAATQAAAG8AAABQAAAAdgAAAHMAAABCAAAAWAAA"
+			"ADcAAAB2AAAAZwAAAEMAAABMAAAAOQAAAHoAAAA2AAAAYwAAAGkAAAA2AAAALwAAADYAAABBAAAA"
+			"bwAAACsAAAA5AAAAZAAAAFUAAAAvAAAAegAAAFkAAABIAAAAQQAAAGcAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
 	(image
@@ -20263,892 +21188,52 @@
 			"Ic1bYIOwQzjYscuXLv7Hzzz0JD89QgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBC"
 			"CCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQggh"
 			"hBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQ"
-			"QkgX/wfjpquZegvOogAAAABJRU5ErkJggg=="
+			"QkgX/wfjpquZegvOogAAAABJRU5ErkJgggAAVwAAAGoAAABuAAAASAAAAG4AAABjAAAAZQAAAFgA"
+			"AAB6AAAAdQAAADAAAABuAAAALwAAAG0AAABpAAAAZAAAAFYAAABQAAAAYwAAAE0AAABuAAAAWAAA"
+			"AC8AAAB4AAAAOQAAAEkAAAArAAAAUAAAAEwAAABmAAAALwAAAEEAAABkAAAAWAAAAFgAAABYAAAA"
+			"OAAAAGwAAABHAAAANQAAACsAAAA0AAAAZgAAAEoAAAArAAAALwAAAGYAAAAvAAAAdwAAAHIAAABq"
+			"AAAAKwAAAEQAAABKAAAAaAAAADAAAAAyAAAARQAAAGEAAABTAAAAVgAAAHIAAABwAAAAcwAAAGoA"
+			"AABvAAAATgAAAGEAAABJAAAAbwAAADYAAABDAAAAQwAAADcAAABMAAAAcgAAAFYAAABrAAAAZQAA"
+			"AHYAAABWAAAAVQAAAHIAAABPAAAAeQAAADkAAABiAAAAUQAAAG8AAABaAAAAcwAAAGQAAABaAAAA"
+			"RwAAAEMAAABhAAAARAAAAEkAAABtAAAAbwAAAHgAAABsAAAAZwAAAEcAAABNAAAAbwAAAE8AAABl"
+			"AAAAagAAAG8AAABmAAAANgAAAEYAAAAvAAAAOAAAAE4AAABBAAAAawAAAGUAAABtAAAAdAAAADQA"
+			"AAB6AAAAdwAAAFEAAABkAAAAegAAAGoAAABSAAAANwAAAGgAAAB1AAAANgAAAGgAAAAwAAAAYgAA"
+			"AE8AAABNAAAAcwAAAGIAAAAyAAAAUAAAAHMAAABuAAAAZgAAAGIAAAAzAAAAWQAAAGwAAABaAAAA"
+			"VQAAAFEAAABxAAAAdQAAAGQAAABOAAAAaAAAAFoAAABqAAAARgAAAFUAAABxAAAAeQAAAEsAAABG"
+			"AAAAagAAAGcAAABOAAAAawAAAG0AAABkAAAAeAAAAG4AAAB5AAAAbQAAAGUAAAArAAAAaQAAAGQA"
+			"AABKAAAALwAAAEkAAABzAAAAcwAAADcAAABaAAAATwAAADEAAABLAAAASAAAAFAAAAAxAAAAbAAA"
+			"AFQAAABUAAAAZAAAAG0AAABHAAAAZAAAAGMAAAA0AAAAUAAAAE0AAABtAAAAUQAAAGYAAABOAAAA"
+			"UwAAAHkAAAB3AAAAeQAAAC8AAABwAAAAQwAAAFcAAABOAAAASwAAAFkAAABUAAAASwAAAEwAAABx"
+			"AAAAMAAAAGoAAAAwAAAAZwAAAGsAAABQAAAARQAAADgAAABmAAAALwAAAHIAAABNAAAAbgAAAFIA"
+			"AABXAAAAaAAAAGcAAABHAAAATQAAAGIAAABRAAAATgAAAGoAAAB5AAAANAAAAGQAAABiAAAAbgAA"
+			"AFoAAAB6AAAARgAAADcAAABmAAAAcwAAAHIAAABWAAAAcQAAAGkAAABTAAAATwAAAEsAAABnAAAA"
+			"ZwAAAEMAAABqAAAAagAAAHYAAAB1AAAAdQAAAFAAAABJAAAAYgAAADMAAAAvAAAATQAAAHkAAABq"
+			"AAAALwAAAFAAAAA3AAAASAAAAGsAAAByAAAAMgAAAGIAAABUAAAAQQAAADAAAABOAAAATQAAAFQA"
+			"AABTAAAAWgAAAFUAAAB0AAAAcAAAADEAAABEAAAAcwAAAHcAAABEAAAASQAAAE8AAAB3AAAAMQAA"
+			"AHMAAABPAAAAeQAAAC8AAABzAAAAMwAAAE0AAAA2AAAATgAAAHkAAABKAAAAWgAAAGMAAABIAAAA"
+			"UQAAAG0AAABNAAAASAAAAHkAAAB0AAAAVgAAAGEAAABHAAAAbQAAAFoAAABwAAAAcQAAADcAAABh"
+			"AAAARwAAAHoAAAAwAAAAWgAAADAAAABzAAAAeQAAAEUAAABHAAAAbwAAAHMAAAA3AAAAcwAAAGEA"
+			"AAB1AAAANQAAAFEAAABEAAAARwAAAHIAAABwAAAANwAAAHIAAABNAAAAeQAAAHcAAAB6AAAAbAAA"
+			"AHAAAAB3AAAAZgAAAFcAAAA0AAAAdAAAAEYAAABoAAAAcAAAAG8AAABSAAAAaQAAAHIAAABnAAAA"
+			"YgAAAFEAAABpAAAATgAAADkAAABZAAAAbQAAAHkAAABVAAAAUQAAAFcAAABDAAAATQAAAEkAAABx"
+			"AAAAWQAAAGMAAABpAAAAeQAAADEAAABRAAAAQwAAAGYAAAB1AAAAMgAAAHgAAABuAAAAUQAAAHIA"
+			"AABBAAAAbgAAADEAAABaAAAASAAAAFkAAABPAAAATwAAAHgAAAAvAAAANwAAADUAAABBAAAAZgAA"
+			"AFoAAAArAAAAWgAAADkAAABNAAAARQAAAFkAAABrAAAAbQAAAGYAAAA5AAAAUQAAAFQAAABmAAAA"
+			"QQAAAHIAAABwAAAAbAAAAGMAAABWAAAASwAAAFIAAAAyAAAAVAAAAEsAAABzAAAAagAAAFEAAABp"
+			"AAAASgAAAGoAAAA1AAAALwAAAFgAAABoAAAAUwAAAE4AAABGAAAAVwAAAGMAAABEAAAAcAAAAHcA"
+			"AAA3AAAAZgAAAG8AAABpAAAAQQAAAFoAAAB6AAAATwAAADYAAABCAAAANgAAAHQAAABFAAAAVwAA"
+			"AEwAAABqAAAAMQAAAFoAAABtAAAAWQAAADAAAABnAAAANgAAAFoAAAB6AAAAUgAAAHkAAABmAAAA"
+			"agAAAGUAAABNAAAAUgAAAEMAAABDAAAAVwAAAHIAAAAxAAAARwAAAHEAAAA5AAAAbgAAAEUAAABk"
+			"AAAAbQAAAHoAAABjAAAAbAAAAG8AAAB0AA=="
 		)
-	)
-	(text_box "Boot\nFlash"
-		(exclude_from_sim no)
-		(at 36.83 120.65 0)
-		(size 12.7 10.16)
-		(stroke
-			(width 0.35)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 247 158 1)
-		)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(href "#8")
-		)
-		(uuid "13d7d9dc-306b-4876-bc08-e3ff5c56847d")
-	)
-	(text_box "DESIGN NOTE:\n\nExample text for critical design notes.\n"
-		(exclude_from_sim no)
-		(at 191.262 136.906 0)
-		(size 17.78 10.795)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1 1)
-				(color 194 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "18ef3f9d-71a0-4e7a-b3af-d459b6d2d0b7")
-	)
-	(text_box "PL Bank 33"
-		(exclude_from_sim no)
-		(at 90.17 77.47 0)
-		(size 20.32 10.16)
-		(stroke
-			(width 0.1524)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 185 255 190 1)
-		)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(href "#13")
-		)
-		(uuid "434d8cda-b089-40f9-9a7c-767325378858")
-	)
-	(text_box ""
-		(exclude_from_sim no)
-		(at 34.29 29.21 90)
-		(size 104.14 5.08)
-		(stroke
-			(width 0.35)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 132 172 255 1)
-		)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(color 0 0 0 1)
-			)
-			(href "#12")
-		)
-		(uuid "51816baf-10d2-4df9-8847-f40156132a3b")
-	)
-	(text_box "DESIGN NOTE:\n\nExample text for informational design notes.\n"
-		(exclude_from_sim no)
-		(at 171.577 136.906 0)
-		(size 17.78 10.795)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 168 168 168 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.125)
-			)
-			(justify left)
-		)
-		(uuid "7f117030-9885-4ba2-bc92-2562e9ad7cc7")
-	)
-	(text_box "DDR3L"
-		(exclude_from_sim no)
-		(at 67.31 153.67 0)
-		(size 15.24 5.08)
-		(stroke
-			(width 0.35)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 247 158 1)
-		)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(href "#11")
-		)
-		(uuid "8e37fbf7-1ec5-4ca7-b09f-b547d6e0679e")
-	)
-	(text_box ""
-		(exclude_from_sim no)
-		(at 21.59 52.07 0)
-		(size 5.08 104.14)
-		(stroke
-			(width 0.35)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 132 172 255 1)
-		)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(color 0 0 0 1)
-			)
-			(href "#15")
-		)
-		(uuid "9c71f94f-c7ec-4cb0-a182-c6599829065f")
-	)
-	(text_box "PL Bank 35"
-		(exclude_from_sim no)
-		(at 62.23 57.15 0)
-		(size 20.32 10.16)
-		(stroke
-			(width 0.1524)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 185 255 190 1)
-		)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(href "#12")
-		)
-		(uuid "c762f9a5-2231-44eb-bc25-df9fe9f7474b")
-	)
-	(text_box "LAYOUT NOTE:\n\nExample text for layout notes.\n"
-		(exclude_from_sim no)
-		(at 210.947 136.906 0)
-		(size 17.78 10.795)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 0 194 194 1)
-		)
-		(fill
-			(type color)
-			(color 61 172 255 0.4)
-		)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "f5714354-db55-4408-a9ad-09b9de255eef")
-	)
-	(text "10 x Single ended"
-		(exclude_from_sim no)
-		(at 44.196 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "0ac0bcb3-677c-438e-855f-ba18d2561499")
-	)
-	(text "PS MIO 500"
-		(exclude_from_sim no)
-		(at 70.612 128.778 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#7")
-		)
-		(uuid "0c5513e0-f883-4703-906e-8e4a7e3b83bf")
-	)
-	(text "7 x Single ended"
-		(exclude_from_sim no)
-		(at 40.64 135.636 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "0d223e01-f1ea-44b3-a87c-e65b58c02aa7")
-	)
-	(text "J2"
-		(exclude_from_sim no)
-		(at 145.796 104.648 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#15")
-		)
-		(uuid "0f81d884-45fd-481e-9af6-c6eea90c36a8")
-	)
-	(text "Ethernet\nPHY"
-		(exclude_from_sim no)
-		(at 48.26 84.836 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#9")
-		)
-		(uuid "1349f16f-3941-4ed2-924c-30534c489aa7")
-	)
-	(text "USB HS PHY"
-		(exclude_from_sim no)
-		(at 48.26 99.06 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.3)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#10")
-		)
-		(uuid "16b1760e-f5ca-40ba-97b5-a242831b9b8a")
-	)
-	(text "DESIGN CONSIDERATIONS"
-		(exclude_from_sim no)
-		(at 171.704 134.747 0)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(bold yes)
-				(color 52 66 160 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "1798df86-92f1-4f88-8f2f-3ff0e3ec105d")
-	)
-	(text "DRAFT, PRELIMINARY, CHECKED, RELEASED\n"
-		(exclude_from_sim no)
-		(at 171.704 162.306 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.6)
-				(bold yes)
-				(color 139 139 139 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "1f57d224-0578-4f87-8ac0-925ca8abf3be")
-	)
-	(text "PS_MIO_502"
-		(exclude_from_sim no)
-		(at 72.39 147.066 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#11")
-		)
-		(uuid "28458385-a3bc-4b24-8353-a1f78c72856d")
-	)
-	(text "USB 2.0 FS"
-		(exclude_from_sim no)
-		(at 34.036 147.574 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "288d93e0-b428-454a-840f-bbdcce6f6a8d")
-	)
-	(text "Revision: ${REVISION}"
-		(exclude_from_sim no)
-		(at 182.118 52.324 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 5 5)
-				(thickness 1.125)
-			)
-		)
-		(uuid "2f15785f-3c86-4f5d-ae1f-453b8ba8604a")
-	)
-	(text "eMMC"
-		(exclude_from_sim no)
-		(at 43.18 111.76 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#8")
-		)
-		(uuid "2fba1d66-18ce-48c8-ae9c-bfc999e3978e")
-	)
-	(text "${BOARD_NAME}"
-		(exclude_from_sim no)
-		(at 215.9 29.972 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 9 9)
-				(thickness 1.125)
-			)
-		)
-		(uuid "40bb6ebe-4f7e-4e93-8be5-206c2b10c67c")
-	)
-	(text "SCHEMATIC STATUS NOTES"
-		(exclude_from_sim no)
-		(at 171.45 158.242 0)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(bold yes)
-				(color 52 66 160 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "4513893d-9c2d-4699-94f5-025dbe1dae12")
-	)
-	(text "USB 2.0 HS "
-		(exclude_from_sim no)
-		(at 33.528 97.028 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "4583b217-bc05-4dc0-98d7-3caff91c2ca3")
-	)
-	(text "IMU"
-		(exclude_from_sim no)
-		(at 129.54 68.326 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#14")
-		)
-		(uuid "4c71f67c-9a66-4caf-a427-d707b301fc1d")
-	)
-	(text "10 x Diff pairs\n14 x Single ended"
-		(exclude_from_sim no)
-		(at 85.598 42.926 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "4e8eb2c3-0859-4309-bd26-b022bb8e1bf4")
-	)
-	(text "I2C"
-		(exclude_from_sim no)
-		(at 55.88 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "4ec27334-6030-4e63-9335-021f9670065b")
-	)
-	(text "PL   - Programmable Logic (FPGA fabric)\nPS   - Processing System (Dual Core ARM A9)\nMIO  - Multiplexed I/O\nBank - Group of I/O pins that share common \n	     resources (e.g. power supply)\nPD   - USB Power Delivery\n"
-		(exclude_from_sim no)
-		(at 171.958 125.476 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.6)
-				(bold yes)
-				(color 139 139 139 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ef4d997-bb34-4d67-b3c6-d7876362cf05")
-	)
-	(text "TOP VIEW"
-		(exclude_from_sim no)
-		(at 180.848 65.024 0)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(bold yes)
-				(color 52 66 160 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "52bdd58e-941b-4b77-8b6c-c5c73515a375")
-	)
-	(text "Power Supplies"
-		(exclude_from_sim no)
-		(at 90.424 174.498 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#4")
-		)
-		(uuid "54db5c3b-1817-48ca-9199-dcc16676596c")
-	)
-	(text "Variant: ${VARIANT}"
-		(exclude_from_sim no)
-		(at 192.278 44.704 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 5 5)
-				(thickness 1.125)
-			)
-		)
-		(uuid "5645908f-b8d9-478a-923f-bbb9946eb609")
-	)
-	(text "6 x Single ended"
-		(exclude_from_sim no)
-		(at 44.45 117.094 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "589011b3-f43c-410d-904f-29c0ce9e5b2b")
-	)
-	(text "PL Bank 13"
-		(exclude_from_sim no)
-		(at 100.1516 109.1221 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#13")
-		)
-		(uuid "58aacb3c-2acc-4bb6-98b9-fdcd3532a237")
-	)
-	(text "1 x Gpio"
-		(exclude_from_sim no)
-		(at 58.42 151.892 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "625af0e9-d4a8-4c0d-91a1-7579a2d1f215")
-	)
-	(text "PS MIO 501"
-		(exclude_from_sim no)
-		(at 70.612 88.9 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#7")
-		)
-		(uuid "6ef592ec-b687-4906-a0fd-6226769fb845")
-	)
-	(text "11 x Diff pairs\n22 x Single ended"
-		(exclude_from_sim no)
-		(at 119.126 112.014 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "72c83c4d-2d02-48b6-8999-54c8e6b592a2")
-	)
-	(text "BOTTOM VIEW"
-		(exclude_from_sim no)
-		(at 223.266 65.278 0)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(bold yes)
-				(color 52 66 160 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "7f534c5e-faa3-421e-96ae-6ddb00528230")
-	)
-	(text "${CURRENT_DATE}"
-		(exclude_from_sim no)
-		(at 255.524 45.466 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 5 5)
-				(thickness 1.125)
-			)
-		)
-		(uuid "80be46a2-2efb-423c-97dc-ca07a03f8efd")
-	)
-	(text "Reset"
-		(exclude_from_sim no)
-		(at 56.896 149.606 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "82245b07-abd9-4181-9e96-f4dbdebaea23")
-	)
-	(text "OTG"
-		(exclude_from_sim no)
-		(at 33.02 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "8254dc7e-9626-42bb-9081-0644fcd56b7a")
-	)
-	(text "PL Bank 34"
-		(exclude_from_sim no)
-		(at 100.838 63.5 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#12")
-		)
-		(uuid "82ab441f-cda3-44ad-974a-106dbd596626")
-	)
-	(text "NOTES"
-		(exclude_from_sim no)
-		(at 171.45 104.648 0)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(bold yes)
-				(color 52 66 160 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "92b04d76-c087-4376-bf71-04e860b5971b")
-	)
-	(text "PS MIO 500"
-		(exclude_from_sim no)
-		(at 70.866 137.16 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#7")
-		)
-		(uuid "95c31559-f174-434a-ab65-1897ccba514d")
-	)
-	(text "J3"
-		(exclude_from_sim no)
-		(at 84.836 32.766 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#15")
-		)
-		(uuid "9cdcc05a-7863-4dac-a368-2806670e5425")
-	)
-	(text "J1"
-		(exclude_from_sim no)
-		(at 23.876 105.41 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#15")
-		)
-		(uuid "aeea0b5b-5e8f-4f71-939f-4d1ce8d780d6")
-	)
-	(text "System\nController"
-		(exclude_from_sim no)
-		(at 46.99 162.052 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#2")
-		)
-		(uuid "af452414-112c-4529-b96a-4656251e3dcc")
-	)
-	(text "PS MIO 501"
-		(exclude_from_sim no)
-		(at 70.358 115.062 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#7")
-		)
-		(uuid "afb54f1d-a5fa-4830-abac-46b8b62e1b59")
-	)
-	(text "3V3 JTAG"
-		(exclude_from_sim no)
-		(at 43.688 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "bb24dfb1-df6a-47ed-8928-e15400883973")
-	)
-	(text "PL Bank 0"
-		(exclude_from_sim no)
-		(at 72.39 76.2 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#6")
-		)
-		(uuid "bb5f9aa3-3fc4-4e39-98a8-d2565a88532a")
-	)
-	(text "Zynq 7020"
-		(exclude_from_sim no)
-		(at 85.598 54.356 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 5.5 5.5)
-				(thickness 0.254)
-				(bold yes)
-				(color 52 66 160 1)
-			)
-		)
-		(uuid "c1b41a19-13fb-493c-b069-cd9dc9a4eec5")
-	)
-	(text "4 x Diff pairs\n2 x Single ended"
-		(exclude_from_sim no)
-		(at 116.84 43.434 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "c36c778d-341e-4dd7-805f-4e8284baa65b")
-	)
-	(text "4 x EN,PGOOD,SENSE"
-		(exclude_from_sim no)
-		(at 62.738 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "e12399d3-0b31-4438-9dca-4427bb2f9e7e")
-	)
-	(text "13 x Diff pairs"
-		(exclude_from_sim no)
-		(at 58.42 42.418 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "e2c68c0c-dc73-4867-9d36-81f678fefb8b")
-	)
-	(text "10 x Diff pairs\n8 x Single ended"
-		(exclude_from_sim no)
-		(at 118.872 89.154 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "e319b353-ccf1-4ecf-80d3-12dd51a0f24e")
-	)
-	(text "PS MIO 501"
-		(exclude_from_sim no)
-		(at 70.358 98.806 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#7")
-		)
-		(uuid "ea4b14f1-e203-41e6-b9fa-e7856a878cda")
-	)
-	(text "Power"
-		(exclude_from_sim no)
-		(at 100.838 138.176 0)
-		(effects
-			(font
-				(face "Timmana")
-				(size 2 2)
-				(thickness 0.254)
-				(bold yes)
-				(color 8 8 8 1)
-			)
-			(href "#5")
-		)
-		(uuid "f22d0405-d2ae-4c31-90a8-b0372f5b6250")
-	)
-	(text "10 x Gpio, Reset, Boot"
-		(exclude_from_sim no)
-		(at 39.116 139.954 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "fb284bdd-c390-43c9-8529-e6e8343bb750")
-	)
-	(text "PD"
-		(exclude_from_sim no)
-		(at 34.544 150.876 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "fc6964d3-e6fb-4d8c-96e0-a73a63621f9c")
 	)
 	(sheet
 		(at 39.37 92.71)
 		(size 17.78 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21190,6 +21275,10 @@
 	(sheet
 		(at 40.64 78.74)
 		(size 15.24 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21231,6 +21320,10 @@
 	(sheet
 		(at 119.38 64.77)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21272,6 +21365,10 @@
 	(sheet
 		(at 90.17 134.62)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21313,6 +21410,10 @@
 	(sheet
 		(at 62.23 143.51)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21354,6 +21455,10 @@
 	(sheet
 		(at 90.17 104.14)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21395,6 +21500,10 @@
 	(sheet
 		(at 36.83 156.21)
 		(size 20.32 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21436,6 +21545,10 @@
 	(sheet
 		(at 90.17 57.15)
 		(size 20.32 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21477,6 +21590,10 @@
 	(sheet
 		(at 143.51 52.07)
 		(size 5.08 104.14)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21518,6 +21635,10 @@
 	(sheet
 		(at 62.23 82.55)
 		(size 20.32 58.42)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21559,6 +21680,10 @@
 	(sheet
 		(at 190.5 215.9)
 		(size 29.21 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21597,6 +21722,10 @@
 	(sheet
 		(at 152.908 216.154)
 		(size 29.21 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21635,6 +21764,10 @@
 	(sheet
 		(at 36.83 107.95)
 		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21676,6 +21809,10 @@
 	(sheet
 		(at 62.23 72.39)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -21717,6 +21854,10 @@
 	(sheet
 		(at 77.47 166.37)
 		(size 25.4 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.35)
@@ -21760,4 +21901,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
